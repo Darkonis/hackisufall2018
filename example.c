@@ -1,5 +1,5 @@
 #include <caca.h>
-
+#include "example.h"
 int makeCaca() {
 	caca_canvas_t *cv;
 	caca_display_t *dp;
