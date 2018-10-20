@@ -5,7 +5,7 @@ example.o: example.c
 	gcc -c example.c -o example.o --std=c11 -Wall -fpic
 
 example.dll: example.o
-	gcc -dynamiclib example.o -o example.dll -lcaca -shared
+	gcc -dynamiclib -shared example.o -o example.dll -lcaca 
 
 build: example.dll
 

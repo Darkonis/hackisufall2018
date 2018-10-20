@@ -1,5 +1,5 @@
 #include <caca.h>
-#include "example.h"
+//#include "example.h"
 int makeCaca() {
 	caca_canvas_t *cv;
 	caca_display_t *dp;
@@ -20,8 +20,8 @@ int makeCaca() {
 	return 0;
 }
 
-int main(void) {
-	return 0;
+int DllMain(void) {
+	return 1;
 }
 
 //testing
