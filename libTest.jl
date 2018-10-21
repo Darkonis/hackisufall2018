@@ -1,7 +1,8 @@
 #using Clang.cindex
 #cindex.parseheader()
-if(isfile("example.dll"))
-	ccall((:Makecaca,"/example.dll"), Cint, (Cint,),(0))
+#process = CDLL('./example.dll')
+if(isfile("./example.so"))
+	ccall((:Makecaca,"./example.so"), Cint, (Cint,),(0))
 else
-	println("example.dll does not exist")
+	println("example.so does not exist")
 end
