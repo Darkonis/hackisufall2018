@@ -19,9 +19,3 @@ int makeCaca() {
 
 	return 0;
 }
-
-int DllMain(void) {
-	return 1;
-}
-
-//testing

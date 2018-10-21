@@ -1,10 +1,13 @@
 import cv2 as cv
+import sys
+import os
+
 from  ctypes import *
-process = CDLL('./example.dll')
+process = CDLL('./example.so')
 
 cap = cv.VideoCapture(0) #This creates an object named cap. It captures images from your webcam, which is defined by the number 0.
 
-while True:
+while cap.isOpened():
 	returnCheck, img = cap.read() #Tries to capture an image (read an image from the webcam). Stores the image in img.
 	cv.imshow("Webcam", img) #cv2.imshow() displays an image.  Can be from a webcam, a file, etc.
 	if cv.waitKey(2) & 0xFF == ord('q'): #if the user presses the q key...

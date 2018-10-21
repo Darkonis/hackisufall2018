@@ -1,0 +1,2 @@
+gcc -c foobar.c -o foobar.o `pkg-config --cflags caca`
+gcc foobar.o -o foobar `pkg-config --libs caca`
