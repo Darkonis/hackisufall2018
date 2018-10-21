@@ -1,0 +1,5 @@
+This project is the submission of Paul Biermann and Darren ___ for HackISU fall
+2018. The project is an ascii video generator. It takes input from a webcam and
+outputs a video rendered entirely from colored ascii characters. Our project is
+written is python and c. We use libcaca, a c library, to convert each image into
+ascii. We use opencv, a python library, to handle video input.
